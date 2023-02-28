@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div class="col-md-4 col-sm-6" *ngFor="let gif of resultados">
+        <div class="card">
+            <div class="card-body">
+                <p> {{ gif.title }}</p>
+                <img class="w-100" [src]="gif.images.downsized_medium.url" alt="gif.title">
+
+            </div>
+        </div>
+    </div>
+</div>
